@@ -9,6 +9,7 @@ public class Observer : MonoBehaviour {
     public GameEnding gameEnding;
 
     void OnTriggerEnter (Collider other) {
+        Debug.Log("test");
         if(other.transform == player) {
             m_IsPlayerInRange = true;
         }
